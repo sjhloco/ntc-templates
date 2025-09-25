@@ -1,0 +1,20 @@
+tunnel sla-class 0
+ sla-name    __all_tunnels__
+ sla-loss    0
+ sla-latency 0
+ sla-jitter  0
+                                                                                                                                     FALLBACK  
+                                                                                                             SLA                     SLA       
+                                     SRC    DST    REMOTE SYSTEM  T LOCAL   T REMOTE  MEAN  MEAN     MEAN    CLASS                   CLASS     
+PROTO  SRC IP       DST IP           PORT   PORT   IP             COLOR     COLOR     LOSS  LATENCY  JITTER  INDEX  SLA CLASS NAME   INDEX     
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ipsec  10.11.42.4   13.69.209.192    12346  12386  10.94.3.247    gold      gold      0     10       3       0      __all_tunnels__  None      
+ipsec  10.11.42.4   20.1.94.144      12346  12346  172.29.99.241  gold      gold      0     1        2       0      __all_tunnels__  None      
+ipsec  10.11.42.4   20.1.88.145      12346  65088  172.29.99.246  gold      gold      0     13       2       0      __all_tunnels__  None      
+ipsec  10.11.42.4   30.118.23.0      12346  12346  10.21.25.1     gold      gold      0     3        1       0      __all_tunnels__  None      
+ipsec  10.11.42.4   21.116.13.32     12346  12346  10.21.25.6     gold      silver    0     4        2       0      __all_tunnels__  None      
+ipsec  10.11.42.4   25.127.110.152   12346  12346  172.29.99.246  gold      silver    0     1        1       0      __all_tunnels__  None      
+ipsec  10.11.42.4   60.117.200.153   12346  12386  172.29.99.241  gold      silver    0     2        1       0      __all_tunnels__  None            
+ipsec  10.11.42.36  10.21.42.36      12346  12346  10.21.25.1     private6  private6  0     4        0       0      __all_tunnels__  None      
+ipsec  10.11.42.36  10.21.42.37      12346  12346  10.21.25.6     private6  private6  0     3        0       0      __all_tunnels__  None      
+ipsec  10.11.42.36  10.91.142.36     12346  12346  10.91.255.1    private6  private6  0     0        0       0      __all_tunnels__  None  
